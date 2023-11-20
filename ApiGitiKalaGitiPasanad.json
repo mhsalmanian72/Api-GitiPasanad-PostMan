@@ -1,0 +1,352 @@
+{
+	"info": {
+		"_postman_id": "54bccf64-5120-4dd3-86dc-f4aae2b33096",
+		"name": "GitiKala",
+		"description": "#پروپرتی های اجباری که باید در تمامی متدها ارسال شوند\nUserId,Token,SkipItem,TakeItem,Input,Other,AppId,WebServicePassword,Languege\n\n#UserId: \nاین پروپرتی در متدهایی استفاده میشودکه کاربر باید احراز شود و در برنامه باید ذخیره شده باشد در غیر این صورت 0 ارسال شود.\n\n#Token:\nاین پروپرتی در متدهایی استفاده میشود که کاربر باید احراز شود و در برنامه باید ذخیره شده باشد در غیر این صورت رشته خالی ارسال شود\n\n#SkipItem:\nاین پروپرتی در متدهایی که دارای لیست هستند و باید به صورت صفحه بندی یا به صورت اسکرول نمایش داده شوند، این پروپرتی از مقدار 0 شروع شده و سپس یکی یکی به آن اضافه میشود یا میتوان شماره صفحه به آن داده شود\n\n#TakeItem:\nاین پروپرتی در متدهایی مه دارای لیست هستند استفاده میشوند و تعداد آینم قابل نمایش در صفحه را مشخص میکند\n\n#Input:\nاین پروپرتی در متدهای دارای لیست که قابل جستجو براساس متن باشند باید ارسال شود که به برنامه نویس اطلاع داده میشود\n\n#Other:\nاین پروپرتی در بعضی از متدها که دارای هدر میباشد قابل استفاده میباشد\n\n#AppId:\nاین پروپرتی در همه متدها باید موحود باشد که کد برنامه ای است که برنامه نویس از آن استفاده میکند این کد به برنامه نویس داده میشود\n\n#WebServicePassword:\nاین پروپرتی در همه متدها باید موجود باشد ومقدار این پروپرتی به برنامه نویس داده میشود\n\n#Languege:\nاین پروپرتی در برنامه هایی که چندزبانه هستند کاربرد دارد و باید زبان مورد نظر ارسال شود که مقدار آن براساس نیاز به برنامه نویس داده میشود",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10269680"
+	},
+	"item": [
+		{
+			"name": "GetFilterMenu",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"UserId\": 0,\r\n    \"Token\": \"\",\r\n    \"SkipItem\": 0,\r\n    \"TakeItem\": 0,\r\n    \"Input\": \"\",\r\n    \"AppId\": 13,\r\n    \"ClientIP\": \"\",\r\n    \"WebServicePassword\": \"bglkDBreBto3VFNf8/OGJ9qtXmtluyPrvncCrN7ufSX4BVmgd33indFIIaR2ft0QCKPVVto1uA7+p29KrOOJLRbQwTaHP1SgFpQcK8cLDN9wjJ1ZCcb/1SwzDvb2ihKZ\",\r\n    \"Other\": \"\",\r\n    \"Language\": \"FA\",\r\n    \"FilterId\": -13\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://svcpool.sgpco.com/api/GitiKala/GetFilterMenu",
+					"protocol": "https",
+					"host": [
+						"svcpool",
+						"sgpco",
+						"com"
+					],
+					"path": [
+						"api",
+						"GitiKala",
+						"GetFilterMenu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProductFilter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"UserId\": 0,\r\n    \"Token\": \"\",\r\n    \"SkipItem\": 0,\r\n    \"TakeItem\": 200,\r\n    \"AppId\": 13,\r\n    \"ClientIP\": \"\",\r\n    \"WebServicePassword\": \"bglkDBreBto3VFNf8/OGJ9qtXmtluyPrvncCrN7ufSX4BVmgd33indFIIaR2ft0QCKPVVto1uA7+p29KrOOJLRbQwTaHP1SgFpQcK8cLDN9wjJ1ZCcb/1SwzDvb2ihKZ\",\r\n    \"Other\": \"\",\r\n    \"Language\": \"FA\",\r\n    \"Input\": \"99010212110\",\r\n    \"GroupId\": \"\",\r\n    \"BrandId\": \"\",\r\n    \"IsUserAuthentication\":true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://svcpool.sgpco.com/api/GitiKala/GetProductFilter",
+					"protocol": "https",
+					"host": [
+						"svcpool",
+						"sgpco",
+						"com"
+					],
+					"path": [
+						"api",
+						"GitiKala",
+						"GetProductFilter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSingleProduct - user is Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"UserId\": 0,\r\n    \"Token\": \"\",\r\n    \"SkipItem\": 0,\r\n    \"TakeItem\": 0,\r\n    \"Input\": \"\",\r\n    \"AppId\": 13,\r\n    \"ClientIP\": \"\",\r\n    \"WebServicePassword\": \"bglkDBreBto3VFNf8/OGJ9qtXmtluyPrvncCrN7ufSX4BVmgd33indFIIaR2ft0QCKPVVto1uA7+p29KrOOJLRbQwTaHP1SgFpQcK8cLDN9wjJ1ZCcb/1SwzDvb2ihKZ\",\r\n    \"Other\": \"\",\r\n    \"Language\": \"FA\",\r\n    \"ProductId\": 9753,\r\n    \"TadbirCode\": \"99150026250\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://svcpool.sgpco.com/api/GitiKala/GetSingleProduct",
+					"protocol": "https",
+					"host": [
+						"svcpool",
+						"sgpco",
+						"com"
+					],
+					"path": [
+						"api",
+						"GitiKala",
+						"GetSingleProduct"
+					]
+				},
+				"description": "#کاربرد متد\nاین متد برای گرفتن اطلاعات یک محصول میباشد."
+			},
+			"response": []
+		},
+		{
+			"name": "GetInvoice",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"AppId\": 13,\r\n    \"ClientIP\": \"\",\r\n    \"WebServicePassword\": \"bglkDBreBto3VFNf8/OGJ9qtXmtluyPrvncCrN7ufSX4BVmgd33indFIIaR2ft0QCKPVVto1uA7+p29KrOOJLRbQwTaHP1SgFpQcK8cLDN9wjJ1ZCcb/1SwzDvb2ihKZ\",\r\n    \"SubscriptionNo\": \"127005\",\r\n    \"TadbirUserId\": \"1\",\r\n    \"StartDate\": \"2021-03-21\",\r\n    \"EndDate\": \"2021-10-06\",\r\n    \"DbName\": \"CPS\",\r\n    \"FactoryCode\": 1,\r\n    \"IsGetAllItem\":false,\r\n    \"TakeItem\":10,\r\n    \"SkipItem\":0,\r\n    \"DocId\":0,\r\n    \"Description\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://svcpool.sgpco.com/api/GitiKala/GetInvoice",
+					"protocol": "https",
+					"host": [
+						"svcpool",
+						"sgpco",
+						"com"
+					],
+					"path": [
+						"api",
+						"GitiKala",
+						"GetInvoice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSingleInvoice",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"AppId\": 13,\r\n    \"ClientIP\": \"\",\r\n    \"WebServicePassword\": \"bglkDBreBto3VFNf8/OGJ9qtXmtluyPrvncCrN7ufSX4BVmgd33indFIIaR2ft0QCKPVVto1uA7+p29KrOOJLRbQwTaHP1SgFpQcK8cLDN9wjJ1ZCcb/1SwzDvb2ihKZ\",\r\n    \"SubscriptionNo\": \"308323\",\r\n    \"FactorNo\": 15861,\r\n    \"FactorType\": 0,\r\n    \"DbName\": \"CPS\",\r\n    \"FactoryCode\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://svcpool.sgpco.com/api/GitiKala/GetSingleInvoice",
+					"protocol": "https",
+					"host": [
+						"svcpool",
+						"sgpco",
+						"com"
+					],
+					"path": [
+						"api",
+						"GitiKala",
+						"GetSingleInvoice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProduct - doc",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"AppId\": 13,\r\n    \"ClientIP\": \"10.57.14.59\",\r\n    \"WebServicePassword\": \"bglkDBreBto3VFNf8/OGJ9qtXmtluyPrvncCrN7ufSX4BVmgd33indFIIaR2ft0QCKPVVto1uA7+p29KrOOJLRbQwTaHP1SgFpQcK8cLDN9wjJ1ZCcb/1SwzDvb2ihKZ\",\r\n    \"Input\":\"8656,8702,8705,9760,9085,8718,9495,8277,9230,7874,9042,8758,8048\",\r\n    \"Language\": \"FA\",\r\n    \"Type\":\"Home\",\r\n    \"SkipItem\":0,\r\n    \"TakeItem\":100\r\n} ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://svcpool.sgpco.com/api/GitiKala/GetProduct",
+					"protocol": "https",
+					"host": [
+						"svcpool",
+						"sgpco",
+						"com"
+					],
+					"path": [
+						"api",
+						"GitiKala",
+						"GetProduct"
+					]
+				},
+				"description": "Type = \"Home\"  \nمقدار TakeItem محدودیت دارد  \nType = \"Basket\"  \nهر مقداری که به TakeItem داده شود نمایش داده میشود"
+			},
+			"response": []
+		},
+		{
+			"name": "SendPreInvoiceToTadbir",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"AppId\": 13,\r\n    \"ClientIP\": \"\",\r\n    \"WebServicePassword\": \"bglkDBreBto3VFNf8/OGJ9qtXmtluyPrvncCrN7ufSX4BVmgd33indFIIaR2ft0QCKPVVto1uA7+p29KrOOJLRbQwTaHP1SgFpQcK8cLDN9wjJ1ZCcb/1SwzDvb2ihKZ\",\r\n    \"TadbirUserId\": 1,\r\n    \"DBName\": \"CPS\",\r\n    \"HostName\": \"A1876\",\r\n    \"StockRoomId\": 2,\r\n    \"RequestId\": 345,\r\n    \"SubscriptionNo\": \"308318\",\r\n    \"Date\": \"2022-08-03\",\r\n    \"Total\": 1,\r\n    \"IsVat\": 1,\r\n    \"Discount\": 0,\r\n    \"description\": \"جهت تست - پیش فاکتور رسمی - با 26  و 2.5 درصد فروشنده : شرکت ره آورد فن آوری رف آدرس دفتر تهران:خیابان  ریعتی،قلهک،پایین تر از پل صدر،کوی یزدانیان،پلاک 26، واحد 3 شمالی                 کدپستی:1913943414                                                                                                                                                  شناسه ملی:14010049858             کد اقتصادی:14010049858          شماره ثبت 578202 ثبت \",\r\n    \"Products\": [\r\n        {\r\n            \"ProductCode\": \"99020120710\",\r\n            \"Amount\": 10\r\n        },\r\n        {\r\n            \"ProductCode\": \"99020112592\",\r\n            \"Amount\": 130\r\n        },\r\n        {\r\n            \"ProductCode\": \"99020112310\",\r\n            \"Amount\": 30\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44363/api/GitiKala/SendPreInvoiceToTadbir",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44363",
+					"path": [
+						"api",
+						"GitiKala",
+						"SendPreInvoiceToTadbir"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GeneratedPdf",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Html\":\"salam\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://poolsrv.sgpco.com/api/GeneratedHtmlToPdf",
+					"protocol": "https",
+					"host": [
+						"poolsrv",
+						"sgpco",
+						"com"
+					],
+					"path": [
+						"api",
+						"GeneratedHtmlToPdf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSingleProduct - user is not Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"AppId\": 13,\r\n    \"ClientIP\": \"\",\r\n    \"WebServicePassword\": \"bglkDBreBto3VFNf8/OGJ9qtXmtluyPrvncCrN7ufSX4BVmgd33indFIIaR2ft0QCKPVVto1uA7+p29KrOOJLRbQwTaHP1SgFpQcK8cLDN9wjJ1ZCcb/1SwzDvb2ihKZ\",\r\n    \"ProductId\":\"665\",\r\n    \"Token\":\"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\",\r\n    \"UserId\":1110\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://svcpool.sgpco.com/api/SGPCatalog/GetSingleProduct",
+					"protocol": "https",
+					"host": [
+						"svcpool",
+						"sgpco",
+						"com"
+					],
+					"path": [
+						"api",
+						"SGPCatalog",
+						"GetSingleProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetNoticeMessage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"AppId\": 13,\r\n    \"ClientIP\": \"\",\r\n    \"WebServicePassword\": \"bglkDBreBto3VFNf8/OGJ9qtXmtluyPrvncCrN7ufSX4BVmgd33indFIIaR2ft0QCKPVVto1uA7+p29KrOOJLRbQwTaHP1SgFpQcK8cLDN9wjJ1ZCcb/1SwzDvb2ihKZ\",\r\n    \"Token\": \"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\",\r\n    \"UserId\": 1110,\r\n    \"SkipItem\": 0,\r\n    \"TakeItem\": 20\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://svcpool.sgpco.com/api/SGPAdminApp/GetNoticeMessage",
+					"protocol": "https",
+					"host": [
+						"svcpool",
+						"sgpco",
+						"com"
+					],
+					"path": [
+						"api",
+						"SGPAdminApp",
+						"GetNoticeMessage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCustomerInvoiceInfo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"UserId\": 0,\r\n    \"Token\": \"\",\r\n    \"ClientIP\": \"\",\r\n    \"AppId\": 13,\r\n    \"WebServicePassword\": \"bglkDBreBto3VFNf8/OGJ9qtXmtluyPrvncCrN7ufSX4BVmgd33indFIIaR2ft0QCKPVVto1uA7+p29KrOOJLRbQwTaHP1SgFpQcK8cLDN9wjJ1ZCcb/1SwzDvb2ihKZ\",\r\n    \"RequestId\":570\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://svcpool.sgpco.com/api/GitiKala/GetCustomerInvoiceInfo",
+					"protocol": "https",
+					"host": [
+						"svcpool",
+						"sgpco",
+						"com"
+					],
+					"path": [
+						"api",
+						"GitiKala",
+						"GetCustomerInvoiceInfo"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
